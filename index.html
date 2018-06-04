@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My CV</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!--//fonts-->
+    <link href="js/hamburgers/hamburgers.css" rel="stylesheet">
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!----start-top-nav-script---->
+</head>
+
+<body>
+    <!--header-->
+    <div class="header" id="home">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">My CV</a>
+                </div>
+                <div class="top-nav">
+                    <button class="menu hamburger hamburger--collapse" type="button">
+                  <span class="hamburger-box">
+                     <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+                    <ul>
+                        <li class="active"><a href="index.html" class="scroll">HOME</a></li>
+                        <li><a href="#about" class="scroll"> ABOUT ME</a></li>
+                        <li><a href="#contacts" class="scroll">CONTACTS </a></li>
+                    </ul>
+                    <script>
+                        $("button.menu").click(function() {
+                            $(".top-nav ul").slideToggle(500, function() {
+                                this.classList.toggle('nav-active');
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="clearfix"></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!---->
+        <div class="banner">
+            <div class="banner-matter">
+                <h2>Software developer</h2>
+                <div class="my_foto">
+                <img src="images/photo.jpg" alt="Vadim Koshman" title="Vadim Koshman" />
+                    </div>
+            </div>
+            <a href="#about" class="scroll arrow"><img src="images/arrow.png" alt=""></a>
+        </div>
+        <!--content-->
+        <div class="content">
+            <div class="about" id="about">
+                <div class="container">
+                    <h3>ABOUT ME</h3>
+                    <p class="dummy-about">Instead of many words look into my CV <a href="">here</a></p>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer" id="contacts">
+            <div class="container">
+                <a href="#home" class="scroll footer-top"> <img src="images/drop.png" alt=""/></a>
+
+                <ul class="social-ic-icons">
+                    <li class="git"><a href="https://github.com/Antispiner"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li class="vk"><a href="https://vk.com/pizhdeshnost"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                    <li class="facebook"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="linked"><a href="https://www.linkedin.com/in/pizhdeshnost"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+                    </li>
+                </ul>
+                <b class="yellow"> </b>
+                <ul class="social-ic-icons social-ic-icons-2">
+                    <li class="skype"><span>skype: </span><a href="skype:treveldeath">treveldeath</a></li>
+                    <li class="email"><span>email: </span><a href="mailto:trevel007@mail.ru">trevel007@mail.ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
