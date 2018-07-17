@@ -1,3 +1,4 @@
+
 body {
     min-width: 320px;
     background: #fff;
@@ -77,11 +78,12 @@ ul {
 }
 
 .logo a {
+    font-weight: 300;
     position: relative;
     color: #bdbdbd;
-    font-size: 40px;
+    font-size: 35px;
     z-index: 999;
-    font-family: 'Indie Flower', sans-serif;
+    
 }
 
 .logo a:focus,
